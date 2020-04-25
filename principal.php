@@ -25,6 +25,14 @@
 
 			echo "<div class='tabla2'>LA FRASE DEL DIA ES: </div>";
 
+			$archivo = "frases.txt";
+			$frases = file($archivo);
+			shuffle($frases);
+			//echo $frases[0];
+			$columnas = explode("&",$frases[0]);
+			echo "<q>".$columnas[0]."</q>"."<br>";
+			echo "<i>".$columnas[1]."</i>";
+
 			echo "<br><br><div><table class='tabla3'><tr><td class='celda1_t3'>IMAGEN 1 </td><td class='celda2_t3'>IMAGEN 2 </td></tr></table></div>";
 
 				}
