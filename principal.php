@@ -1,115 +1,41 @@
 <?php
 
-session_start();
+	session_start();
 
-if (isset($_SESSION["usuario"]))
+	if (isset($_SESSION["usuario"])){
 
-{ $usuario=$_SESSION["usuario"];
-
-//Estilos para los bordes de tablas
+		$usuario=$_SESSION["usuario"];
 
 ?>
 
-<!DOCTYPE html>
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="estilos_principal.css">
+		<title>Mi Página Web</title>
+	</head>
+	<body>
+		<?php
 
-<html>
+			echo "<div align='right'>Usuario: $usuario <a href='cerrar_sesion.php'>Cerrar sesión</a></div><br><br>";
 
-<head>
+			echo "<div align='center'><table class='tabla1'><tr><td class='celda1_t1'>BIENVENIDOS A MI PAGINA PRINCIPAL</td></tr></table></div><br><br>";
 
-<style>
+			echo "<div class='tabla2'>LA FRASE DEL DIA ES: </div>";
 
-.tabla1{
+			echo "<br><br><div><table class='tabla3'><tr><td class='celda1_t3'>IMAGEN 1 </td><td class='celda2_t3'>IMAGEN 2 </td></tr></table></div>";
 
-border: 1px solid red;
+				}
 
-border-collapse: collapse;
+			else{
+				$prog='acceso.php';
 
-padding: 15px;
-
-}
-
-.celda1_t1{ width:40%;
-
-text-align: center;
-
-color: red;
-
-border: 1px solid black;
-
-padding: 15px;
-
-}
-
-#tabla2{
-
-color:green;
-
-background-color: #f2f2f2;
-
-border: 1px solid black;
-
-border-collapse: collapse;
-
-padding: 10px;
-
-width: 100%;
-
-}
-
-.tabla3{
-
-color:green;
-
-background-color: white;
-
-border: 1px solid black;
-
-border-collapse: collapse;
-
-padding: 10px;
-
-width: 100%;
-
-}
-
-.celda1_t3{ width:40%;
-
-text-align: left;
-
-border: 0px;
-
-}
-
-.celda2_t3{ width: 60%;
-
-text-align: right;
-
-border: 0px;
-
-}
-
-</style>
-
-<body>
-
-<?php
-
-echo "<div align='right'>Usuario: $usuario <a href='cerrar_sesion.php'>Cerrar sesión</a></div><br><br>";
-
-echo "<div align='center'><table class='tabla1'><tr><td class='celda1_t1'>BIENVENIDOS A MI PAGINA PRINCIPAL</td></tr></table></div><br><br>";
-
-echo "<div class='tabla2'>LA FRASE DEL DIA ES: </div>";
-
-echo "<br><br><div><table class='tabla3'><tr><td class='celda1_t3'>IMAGEN 1 </td><td class='celda2_t3'>IMAGEN 2 </td></tr></table></div>";
-
-}
-
-else
-
-{ $prog='acceso.php';
-
-header("Location: $prog");
+				header("Location: $prog");
 
 }
 
 ?>
+</body>
+</html>
