@@ -23,6 +23,7 @@
 						<img src="img/lang/es.gif" alt="Español" height="25px">
 					</td>
 					<td>
+						<!-- Imprime el número de visitantes -->
 						<p>Número de visitantes:
 							<?php
 								$archivo_visitantes = "visitantes.txt";
@@ -69,43 +70,43 @@
 			echo "<q>".$columnas[0]."</q>"."<br>";
 			echo "<i>".$columnas[1]."</i>";
 			?>
-			</div>
-			<br><br>
-			<div>
-				<table class='tabla3'>
-					<tr>
-						<td class='celda1_t3'>
-							<!-- Lee e imprime los lugares -->
-							<?php
-								$archivo2 = "lugares.txt";
-								$lugares = file($archivo2);
-								shuffle($lugares);
-								//echo $frases[0];
-								$columnas = explode("&",$lugares[0]);
-								echo "<p>Uno de mi lugares favoritos es:<br>";
-								echo "<p>".$columnas[1]."</p>";
-								echo "<img src='img/lugares/".$columnas[0]."'>"."<br>";
-							?>
-						</td>
-						<td>
-							<button>Continuar</button>
-						</td>
-						<td class='celda2_t3'>
-							<!-- Lee e imprime las mascotas -->
-							<?php
-								$archivo3 = "mascotas.txt";
-								$mascotas = file($archivo3);
-								shuffle($mascotas);
-								//echo $frases[0];
-								$columnas = explode("&",$mascotas[0]);
-								echo "<p>Unas de mi mascotas favoritas son:<br>";
-								echo "<p>".$columnas[1]."</p>";
-								echo "<img src='img/mascotas/".$columnas[0]."'>"."<br>";
-							?>
-						</td>
-					</tr>
-				</table>
-			</div>
+		</div>
+		<br><br>
+		<div>
+			<table class='tabla3'>
+				<tr>
+					<td class='celda1_t3'>
+						<!-- Lee e imprime los lugares -->
+						<?php
+							$archivo2 = "lugares.txt";
+							$lugares = file($archivo2);
+							shuffle($lugares);
+							//echo $frases[0];
+							$columnas = explode("&",$lugares[0]);
+							echo "<p>Uno de mi lugares favoritos es:<br>";
+							echo "<p>".$columnas[1]."</p>";
+							echo "<img src='img/lugares/".$columnas[0]."'>"."<br>";
+						?>
+					</td>
+					<td>
+						<button onclick="location.reload()">Continuar</button>
+					</td>
+					<td class='celda2_t3'>
+						<!-- Lee e imprime las mascotas -->
+						<?php
+							$archivo3 = "mascotas.txt";
+							$mascotas = file($archivo3);
+							shuffle($mascotas);
+							//echo $frases[0];
+							$columnas = explode("&",$mascotas[0]);
+							echo "<p>Unas de mi mascotas favoritas son:<br>";
+							echo "<p>".$columnas[1]."</p>";
+							echo "<img src='img/mascotas/".$columnas[0]."'>"."<br>";
+						?>
+					</td>
+				</tr>
+			</table>
+		</div>
 		<!-- Fin el if-else -->
 		<?php
 			}else{
