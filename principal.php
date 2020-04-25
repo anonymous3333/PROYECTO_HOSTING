@@ -22,7 +22,27 @@
 						<img src="img/lang/eng.gif" alt="Inglés" height="25px">
 						<img src="img/lang/es.gif" alt="Español" height="25px">
 					</td>
-					<td><a href='cerrar_sesion.php'>Cerrar sesión</a></td>
+					<td>
+						<p>Número de visitantes:
+							<?php
+								$archivo_visitantes = "visitantes.txt";
+								$f = fopen($archivo_visitantes, "r"); 
+								if($f)
+								{
+									$visitantes = fread($f, filesize($archivo_visitantes));
+									++$visitantes;
+									echo $visitantes;
+									fclose($f);
+								}
+								$f = fopen($archivo_visitantes, "w+");
+								if($f)
+								{
+									fwrite($f, $visitantes);
+									fclose($f);
+								}
+							?>
+						</p>
+						<a href='cerrar_sesion.php'>Cerrar sesión</a></td>
 					<td></td>
 				</tr>
 			</table>
