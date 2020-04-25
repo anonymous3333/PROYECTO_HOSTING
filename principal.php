@@ -33,7 +33,24 @@
 			echo "<q>".$columnas[0]."</q>"."<br>";
 			echo "<i>".$columnas[1]."</i>";
 
-			echo "<br><br><div><table class='tabla3'><tr><td class='celda1_t3'>IMAGEN 1 </td><td class='celda2_t3'>IMAGEN 2 </td></tr></table></div>";
+			echo "<br><br>
+			<div>
+				<table class='tabla3'>
+					<tr>
+						<td class='celda1_t3'>";
+						$archivo2 = "lugares.txt";
+						$lugares = file($archivo2);
+						shuffle($lugares);
+						//echo $frases[0];
+						$columnas = explode("&",$lugares[0]);
+						echo "<p>Uno de mi lugares favoritos es:<br>";
+						echo "<p>".$columnas[1]."</p>";
+						echo "<img src='img/".$columnas[0]."'>"."<br>";
+						echo "</td>
+						<td class='celda2_t3'>IMAGEN 2 </td>
+					</tr>
+				</table>
+			</div>";
 
 				}
 

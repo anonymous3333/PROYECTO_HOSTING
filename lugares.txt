@@ -1,0 +1,4 @@
+cine.jpg&El cine.
+mcdonalds.jpg&McDonald's
+mixup.jpg&La tienda de discos.
+natacion.jpg&El club de natación.
