@@ -31,11 +31,8 @@ if (isset($_POST["usu"],$_POST["con"]))
 		header("Location: $prog");
 
 	}
-
 	else{
-
 		echo "Acceso no permitido. Intente de nuevo";
-
 	}
 
 }
@@ -43,47 +40,41 @@ if (isset($_POST["usu"],$_POST["con"]))
 ?>
 
 <!DOCTYPE html>
-
+<html lang="es">
 <head>
-
-<title>
-
-Formulario de acceso al sistema
-
-</title>
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Acceso al sistema</title>
+	<link rel="stylesheet" href="estilos_acceso.css">
 </head>
-
 <body>
 
-<div align="center">
+		<form name="alta" method="post" class="form">
 
-<form name="alta" action="" method="post">
+		<fieldset class="grupo_form">
 
-<fieldset style="width:450px; height:200px; font-size:22; background-color: #00CC00;">
+			<legend>Introduzca los datos</legend>
 
-<legend><font color='red'>Introduzca los datos </font></legend>
+				<!-- <label>Escriba su nombre de usuario:</label> -->
 
-<div align="left"><br>
+				<div align="center" >
+				<input type="text" name="usu" placeholder="Usuario" class="textbox" required>
+				</div>
 
-<label>Escriba su nombre de usuario:</label>
 
-<input type="text" name="usu" required><br>
+				<!-- <label>Escriba su contraseña:</label> -->
 
-<p><label>Escriba su contraseña:</label>
+				<div align="center" >
+				<input type="password" name="con" placeholder="Constraseña" class="textbox" required>
+				</div>
 
-<input type="password" name="con" required> </p><br>
 
-</div>
+				<div align="center">
+				<input type="submit" name="acceso" value="Iniciar Sesión">
+				</div>
 
-<p><input type="submit" name="acceso" value="Acceder al sistema"></p>
+		</fieldset>
 
-</fieldset>
-
-</form>
-
-</div>
-
+	</form>
 </body>
-
 </html>
