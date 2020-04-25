@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-image: url(img/background/principal.jpg);
+	background-size: cover;
+}
+
+.info{
+	text-align: right;
+	margin: 1% 1%;
+}
+
+h1{
+	margin-bottom: 10%;
+}
+
+
+.contenedor_lista>a{
+	display: block;
+	margin: 5% 0 5%;
+}
+
+.contenedor_lista{
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+	padding: 2%;
+	width: 25%;
+	height:auto;
+	background-color: #fff9db;
+	border-radius: 5%;
+}
