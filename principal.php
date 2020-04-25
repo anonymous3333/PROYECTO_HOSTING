@@ -45,9 +45,18 @@
 						$columnas = explode("&",$lugares[0]);
 						echo "<p>Uno de mi lugares favoritos es:<br>";
 						echo "<p>".$columnas[1]."</p>";
-						echo "<img src='img/".$columnas[0]."'>"."<br>";
+						echo "<img src='img/lugares/".$columnas[0]."'>"."<br>";
+						echo "</td>";
+						echo "<td class='celda2_t3'>";
+						$archivo3 = "mascotas.txt";
+						$mascotas = file($archivo3);
+						shuffle($mascotas);
+						//echo $frases[0];
+						$columnas = explode("&",$mascotas[0]);
+						echo "<p>Unas de mi mascotas favoritas son:<br>";
+						echo "<p>".$columnas[1]."</p>";
+						echo "<img src='img/mascotas/".$columnas[0]."'>"."<br>";
 						echo "</td>
-						<td class='celda2_t3'>IMAGEN 2 </td>
 					</tr>
 				</table>
 			</div>";

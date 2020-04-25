@@ -1,0 +1,4 @@
+conejo.jpg&Los conejos.
+peces.jpg&Los peces.
+perro.jpg&Los perros.
+tortugas.jpg&Las tortugas.
