@@ -73,7 +73,7 @@
 						?>
 					</td>
 					<td class="btn_continuar">
-						<button onclick="location.reload()">Continuar</button>
+						<button onclick="window.location='menu_practicas.php'">Continuar</button>
 					</td>
 					<td>
 						<!-- Lee e imprime las mascotas -->
