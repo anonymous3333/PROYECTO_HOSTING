@@ -24,23 +24,10 @@
 					</td>
 					<td>
 						<!-- Imprime el número de visitantes -->
-						<p>Número de visitantes:
+						<p>Número de visitante:
 							<?php
-								$archivo_visitantes = "visitantes.txt";
-								$f = fopen($archivo_visitantes, "r"); 
-								if($f)
-								{
-									$visitantes = fread($f, filesize($archivo_visitantes));
-									++$visitantes;
-									echo $visitantes;
-									fclose($f);
-								}
-								$f = fopen($archivo_visitantes, "w+");
-								if($f)
-								{
-									fwrite($f, $visitantes);
-									fclose($f);
-								}
+								$n_visitante = $_SESSION["visitantes"];
+								echo $n_visitante;
 							?>
 						</p>
 						<a href='cerrar_sesion.php'>Cerrar sesión</a></td>

@@ -1,25 +1,42 @@
 <?php session_start();
 
 if (isset($_POST["usu"],$_POST["con"]))
+{
+	$us=$_POST["usu"];
 
-{ $us=$_POST["usu"];
+	$contra=$_POST["con"];
 
-$contra=$_POST["con"];
+	if (($us=="admin" and $contra=="abc") or ($us=="invitado" and $contra="12345"))
+	{
+		$_SESSION["usuario"]= $us;
+		$archivo_visitantes = "visitantes.txt";
+		$f = fopen($archivo_visitantes, "r"); 
+		if($f)
+		{
+			$visitantes = fread($f, filesize($archivo_visitantes));
+			++$visitantes;
+			$_SESSION["visitantes"] =$visitantes;
+			//echo $visitantes;
+			fclose($f);
+		}
+		$f = fopen($archivo_visitantes, "w+");
+		if($f)
+		{
+			fwrite($f, $visitantes);
+			fclose($f);
+		}
 
-if (($us=="admin" and $contra=="abc") or ($us=="invitado" and $contra="12345"))
-{ $_SESSION["usuario"]= $us;
+		$prog='mensaje_acceso.php';
 
-$prog='mensaje_acceso.php';
+		header("Location: $prog");
 
-header("Location: $prog");
+	}
 
-}
+	else{
 
-else{
+		echo "Acceso no permitido. Intente de nuevo";
 
-echo "Acceso no permitido. Intente de nuevo";
-
-}
+	}
 
 }
 
