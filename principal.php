@@ -14,11 +14,14 @@
 				$usuario=$_SESSION["usuario"];
 		?>
 		
-		<div align='right'>
+		<div align='center'>
 			<table>
 				<tr>
 					<td><?php echo "Usuario:".$usuario ?></td>
-
+					<td>
+						<img src="img/lang/eng.gif" alt="Inglés" height="25px">
+						<img src="img/lang/es.gif" alt="Español" height="25px">
+					</td>
 					<td><a href='cerrar_sesion.php'>Cerrar sesión</a></td>
 					<td></td>
 				</tr>
@@ -63,6 +66,9 @@
 								echo "<p>".$columnas[1]."</p>";
 								echo "<img src='img/lugares/".$columnas[0]."'>"."<br>";
 							?>
+						</td>
+						<td>
+							<button>Continuar</button>
 						</td>
 						<td class='celda2_t3'>
 							<!-- Lee e imprime las mascotas -->
