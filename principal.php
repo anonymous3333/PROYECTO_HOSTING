@@ -14,11 +14,15 @@
 				$usuario=$_SESSION["usuario"];
 		?>
 		
-		<div align='center'>
-			<table>
+		<div>
+			<table class="bar_nav">
 				<tr>
-					<td><?php echo "Usuario:".$usuario ?></td>
 					<td>
+						<p>Usuario actual:</p>
+						<p><?php echo $usuario ?></p>
+					</td>
+					<td class="idiomas">
+						<p>Cambiar idioma:</p>
 						<img src="img/lang/eng.gif" alt="Inglés" height="25px">
 						<img src="img/lang/es.gif" alt="Español" height="25px">
 					</td>
@@ -35,18 +39,12 @@
 				</tr>
 			</table>
 		</div>
-		<br><br>
-		<div align='center'>
-		<table class='tabla1'>
-			<tr>
-				<td class='celda1_t1'><h1>BIENVENIDOS A MI PAGINA PRINCIPAL</h1></td>
-			</tr>
-		</table>
+		<div class='titulo'>
+			<h1>BIENVENIDOS A MI PAGINA PRINCIPAL</h1>
 		</div>
-		<br><br>
-
-		<div class='tabla2'>
-			<h2>La frase del día es:</h2>
+		<h2 class="titulo_frase">La frase del día es:</h2>
+		<div class="contenedor_frase">
+			
 		<!-- Lee e imprime las frases -->
 			<?php
 			$archivo = "frases.txt";
@@ -54,15 +52,14 @@
 			shuffle($frases);
 			//echo $frases[0];
 			$columnas = explode("&",$frases[0]);
-			echo "<q>".$columnas[0]."</q>"."<br>";
-			echo "<i>".$columnas[1]."</i>";
+			echo "<q class='frase'>".$columnas[0]."</q>"."<br>";
+			echo "<i class='autor'>".$columnas[1]."</i>";
 			?>
 		</div>
-		<br><br>
-		<div>
-			<table class='tabla3'>
-				<tr>
-					<td class='celda1_t3'>
+		<div class="contenedor_tabla_img">
+			<table class='tabla_imagenes'>
+				<tr class="fila_tabla_img">
+					<td>
 						<!-- Lee e imprime los lugares -->
 						<?php
 							$archivo2 = "lugares.txt";
@@ -75,10 +72,10 @@
 							echo "<img src='img/lugares/".$columnas[0]."'>"."<br>";
 						?>
 					</td>
-					<td>
+					<td class="btn_continuar">
 						<button onclick="location.reload()">Continuar</button>
 					</td>
-					<td class='celda2_t3'>
+					<td>
 						<!-- Lee e imprime las mascotas -->
 						<?php
 							$archivo3 = "mascotas.txt";

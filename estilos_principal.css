@@ -1,70 +1,62 @@
-
-.tabla1{
-
-border: 1px solid red;
-
-border-collapse: collapse;
-
-padding: 15px;
-
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.celda1_t1{ width:40%;
-
-text-align: center;
-
-color: red;
-
-border: 1px solid black;
-
-padding: 15px;
-
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #1c7ed6;
 }
 
-.tabla2{
-
-color:green;
-
-background-color: #f2f2f2;
-
-border: 1px solid black;
-
-border-collapse: collapse;
-
-padding: 10px;
-
-width: 100%;
-
+table{
+	width: 100%;
 }
 
-.tabla3{
-
-color:green;
-
-background-color: white;
-
-border: 1px solid black;
-
-border-collapse: collapse;
-
-padding: 10px;
-
-width: 100%;
-
+td{
+	text-align: center;
 }
 
-.celda1_t3{ width:40%;
-
-text-align: left;
-
-border: 0px;
-
+.bar_nav{
+	background-color: #fcc419;
 }
 
-.celda2_t3{ width: 60%;
+.titulo{
+	margin: 3% 0 3%;
+	text-align: center;
+}
 
-text-align: right;
+div > .frase, .autor{
+	display: block;
+}
 
-border: 0px;
+.contenedor_frase{
+	width: 80%;
+	margin:0 auto 5% auto;
+	padding: 5%;
+	border-radius: 50%;
+	background-color: azure;
+}
 
+.titulo_frase{
+	text-align: center;
+	margin: 2%;
+}
+
+.frase{
+	text-align: center;
+}
+
+.autor{
+	width: 80%;
+	margin: auto;
+	text-align: right;
+}
+
+.idiomas{
+	width: 70%;
+}
+
+.btn_continuar{
+	width: 20%;
 }
