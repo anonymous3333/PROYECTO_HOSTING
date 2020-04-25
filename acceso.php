@@ -6,7 +6,7 @@ if (isset($_POST["usu"],$_POST["con"]))
 
 $contra=$_POST["con"];
 
-if ($us=="admin" and $contra=="abc")
+if (($us=="admin" and $contra=="abc") or ($us=="invitado" and $contra="12345"))
 { $_SESSION["usuario"]= $us;
 
 $prog='mensaje_acceso.php';
