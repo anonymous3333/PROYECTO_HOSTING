@@ -10,7 +10,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Menú de prácticas</title>
-	<link rel="stylesheet" href="estilos_menu_practicas.css">
+	<link rel="stylesheet" href="menu_practicas.css">
 </head>
 <body>
 	<div class="info">
@@ -21,6 +21,7 @@
 			Número de visitante:
 			<?=$visitante;?>
 		</p>
+		<a href="cerrar_sesion.php">Cerrar sesión</a>
 	</div>
 	<div class="contenedor_lista">
 		<h1>Menú de prácticas</h1>

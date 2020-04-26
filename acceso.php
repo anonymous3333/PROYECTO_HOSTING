@@ -45,7 +45,7 @@ if (isset($_POST["usu"],$_POST["con"]))
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Acceso al sistema</title>
-	<link rel="stylesheet" href="estilos_acceso.css">
+	<link rel="stylesheet" href="acceso.css">
 </head>
 <body>
 
