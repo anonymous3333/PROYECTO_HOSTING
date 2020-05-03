@@ -34,6 +34,8 @@
 	</div>
 </body>
 </html>
-<?php else:?>
-
-<?php endif;?>
+<?php else:
+	$prog='acceso.php';
+	header("Location: $prog");
+	endif;
+?>
