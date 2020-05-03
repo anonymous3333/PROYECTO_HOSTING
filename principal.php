@@ -92,7 +92,7 @@
 		
 	</body>
 </html>
-<!-- Fin el if-else -->
+<!-- Fin del if-else -->
 <?php
 	else:
 		$prog='acceso.php';
