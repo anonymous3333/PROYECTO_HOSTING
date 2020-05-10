@@ -25,11 +25,9 @@
 	</div>
 	<div class="contenedor_lista">
 		<h1>Menú de prácticas</h1>
-		<a href="#">Sistema Solar</a>
-		<a href="#">Idiomas</a>
-		<a href="#">Figuras</a>
-		<a href="#">IMC</a>
-		<a href="#">Formulario:alta alumnos</a>
+		<a href="sistema_solar.html">Sistema Solar</a>
+		<a href="volumenes.html">Volúmenes</a>
+		<a href="pitagoras.html">Teorema de pitágoras</a>
 		<a href="principal.php">Volver</a>
 	</div>
 </body>
