@@ -1,4 +1,5 @@
-<?php session_start();
+<?php
+session_start();
 
 if (isset($_POST["usu"],$_POST["con"]))
 {
@@ -49,29 +50,23 @@ if (isset($_POST["usu"],$_POST["con"]))
 </head>
 <body>
 
-		<form name="alta" method="post" class="form">
+	<form name="alta" method="post" class="form">
 
 		<fieldset class="grupo_form">
 
 			<legend>Introduzca los datos</legend>
 
-				<!-- <label>Escriba su nombre de usuario:</label> -->
+			<div align="center" >
+			<input type="text" name="usu" placeholder="Usuario" class="textbox" required>
+			</div>
 
-				<div align="center" >
-				<input type="text" name="usu" placeholder="Usuario" class="textbox" required>
-				</div>
+			<div align="center" >
+			<input type="password" name="con" placeholder="Constraseña" class="textbox" required>
+			</div>
 
-
-				<!-- <label>Escriba su contraseña:</label> -->
-
-				<div align="center" >
-				<input type="password" name="con" placeholder="Constraseña" class="textbox" required>
-				</div>
-
-
-				<div align="center">
-				<input type="submit" name="acceso" value="Iniciar Sesión">
-				</div>
+			<div align="center">
+			<input type="submit" name="acceso" value="Iniciar Sesión">
+			</div>
 
 		</fieldset>
 
