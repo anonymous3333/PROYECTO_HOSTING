@@ -2,31 +2,51 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-body{
-	display: flex;
 	font-family: Helvetica;
 }
 
-.form{
-	margin-left: 33%;
-	width: 30%;
-	height: auto;
+body{
+	
+	background-color: #dee2e6;
+	color: black;
 }
+
+.form{
+	margin: auto;
+	margin-top: 125px;
+	height: 200px;
+	width: 25%;
+	padding: 1%;
+	background-color: #0ca678;
+	border: 2px solid #212529;
+	border-radius: 10px;
+}
+
 
 legend{
-	margin: auto;
-}
-
-.grupo_form {
-	padding: 10%;
-	background-color: #0ca678;
-	border-radius: 5%;
+	text-align: center;
 }
 
 .textbox{
-	margin: 2% auto 2%;
+	text-indent: 10px;
+	height: 30px;
 	width: 80%;
-	border-radius: 10%;
+	border: 1px solid #212529;
+	border-radius: 10px;
+}
+
+.textbox::placeholder{
+	text-indent: 10px;
+}
+
+.button{
+	height: 30px;
+	width: 35%;
+	background-color: #f8f9fa;
+	border: 1px solid #212529;
+	border-radius: 10px;
+}
+
+.form > div{
+	margin: 5% 0 5% 0;
 }
