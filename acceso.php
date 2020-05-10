@@ -52,24 +52,17 @@ if (isset($_POST["usu"],$_POST["con"]))
 
 	<form name="alta" method="post" class="form">
 
-		<fieldset class="grupo_form">
-
 			<legend>Introduzca los datos</legend>
-
 			<div align="center" >
 			<input type="text" name="usu" placeholder="Usuario" class="textbox" required>
 			</div>
 
 			<div align="center" >
-			<input type="password" name="con" placeholder="Constraseña" class="textbox" required>
+			<input type="password" name="con" placeholder="Contraseña" class="textbox" required>
 			</div>
-
 			<div align="center">
-			<input type="submit" name="acceso" value="Iniciar Sesión">
+			<input type="submit" name="acceso" value="Iniciar Sesión" class="button">
 			</div>
-
-		</fieldset>
-
 	</form>
 </body>
 </html>
