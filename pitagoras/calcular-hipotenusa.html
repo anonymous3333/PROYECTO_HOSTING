@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		window.onload=function(){
+			document.getElementById("calcular").onclick = function obtenerHipotenusa(){
+				var cateto_opuesto = parseFloat(document.getElementById("cateto-opuesto").value);
+				var cateto_adyacente = parseFloat(document.getElementById("cateto-adyacente").value);
+				if(isNaN(cateto_opuesto) || isNaN(cateto_adyacente)){
+					alert("Datos de entrada no válidos.")
+				}else{
+					resultado=Math.sqrt(cateto_opuesto*cateto_opuesto+cateto_adyacente*cateto_adyacente);
+					document.getElementById("resultado").value = isNaN(resultado) ? "Indefinido":resultado;
+				}
+			}
+		}
+	</script>
+	<link rel="stylesheet" href="pitagoras.css">
+	<title>Calcular Hipotenusa</title>
+</head>
+<body>
+	<div>
+		<div>
+			<h1> Calcular Hipotenusa</h1>
+		</div>
+		<img src="img/hipotenusa.png" alt="hipotenusa">
+		<div>
+			<label for="cateto-opuesto">Cateto Opuesto</label>	
+			<input type="text" name="cateto-opuesto" id="cateto-opuesto" class="textbox">
+		</div>
+		<div>
+			<label for="cateto-adyacente">Cateto Adyacente</label>
+			<input type="text" name="cateto-adyacente" id="cateto-adyacente" class="textbox">
+		</div>
+		<div>
+			<button class="button" id="calcular">Calcular</button>
+		</div>
+		<div>
+			<label for="resultado">El resultado es:</label>
+			<input type="text" readonly name="resultado" class="textbox" id="resultado">
+		</div>
+	</div>
+</body>
+</html>
