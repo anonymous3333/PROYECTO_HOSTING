@@ -1,7 +1,3 @@
-function cargaHTML(nombreArchivo){
-	var frame = document.getElementById("frame");
-	frame.src = "volumenes/"+nombreArchivo+".html"
-}
 function obtenerVolumenCubo(){
 	var arista1 = parseFloat(document.getElementById("arista1").value);
 	var arista2 = parseFloat(document.getElementById("arista2").value);
