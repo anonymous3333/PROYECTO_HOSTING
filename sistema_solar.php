@@ -5,11 +5,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sistema Solar</title>
 	<script src="sistema_solar.js"></script>
-	<link rel="stylesheet" href="sistema_solar.css">
+	<link rel="stylesheet" href="practicas-global.css">
+	<link rel="stylesheet" href="sistema-solar.css">
 </head>
 <body>
 	<div class="contenido-principal">
-		<ol type="1" class="lista-planetas" id="lista_planetas">
+		<ol type="1" class="lista-opciones" id="lista_planetas">
 			<li><a href="#" onclick="cargaHTML(0);">Mercurio</a></li>
 			<li><a href="#" onclick="cargaHTML(1);">Venus</a></li>
 			<li><a href="#" onclick="cargaHTML(2);">Tierra</a></li>

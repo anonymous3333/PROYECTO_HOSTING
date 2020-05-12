@@ -8,12 +8,8 @@ html,body,.contenido-principal{
 	width: 100%;
 	height: 100%;
 }
-body{
-	background-image: url(planetas/background.jpg);
-	background-size: cover;
-}
 
-.lista-planetas{
+.lista-opciones{
 	display: inline-block;
 	width: 20%;
 	height: 100%;
