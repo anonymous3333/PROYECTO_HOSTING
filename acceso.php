@@ -58,7 +58,7 @@
 		
 				header("Location: $prog");
 			}else
-				echo "<div style='margin-top:2%'><p style='color:red;text-align:center;'>No se reconoce el usuario o la contraseña.<br>Intente otra vez.</p></div>";
+				echo "<div style='margin-top:2%'><p style='color:#e03131;text-align:center;'>No se reconoce el usuario o la contraseña.<br>Intente otra vez.</p></div>";
 		}
 		?>
 </body>
