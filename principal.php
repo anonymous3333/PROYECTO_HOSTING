@@ -10,6 +10,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="global.js"></script>
 		<link rel="stylesheet" href="principal.css">
 		<title>Mi Página Web</title>
 	</head>
@@ -19,21 +20,28 @@
 			<table class="bar_nav">
 				<tr>
 					<td>
-						<p>Usuario actual:</p>
-						<p><?=$usuario;?></p>
+						<p>Fecha de hoy: <span id="fecha"><span></p>
+						<p><span id="hora"></span> hrs.</p>
 					</td>
-					<td class="idiomas">
+					<td id="contenedor-dia">
+						<!-- Imprime el número de visitantes -->
+						<p>Número de visitante:
+							<?=$n_visitante;?>
+						</p>
+					</td>
+					<td>
+
+					</td>
+					<td>
 						<p>Cambiar idioma:</p>
 						<img src="img/lang/eng.gif" alt="Inglés" height="25px">
 						<img src="img/lang/es.gif" alt="Español" height="25px">
 					</td>
 					<td>
-						<!-- Imprime el número de visitantes -->
-						<p>Número de visitante:
-							<?=$n_visitante;?>
-						</p>
-						<a href='cerrar_sesion.php'>Cerrar sesión</a></td>
-					<td></td>
+						<p>Usuario actual:</p>
+						<p><?=$usuario;?></p>
+						<a href='cerrar_sesion.php'>Cerrar sesión</a>
+					</td>
 				</tr>
 			</table>
 		</div>
