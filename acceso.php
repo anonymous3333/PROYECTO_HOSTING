@@ -1,4 +1,5 @@
 <?php
+	require ('linea_aleatoria.php');
 	session_start();
 ?>
 
@@ -33,6 +34,9 @@
 			if (($us=="admin" and $contra=="abc") or ($us=="invitado" and $contra="12345")){
 			
 				$_SESSION["usuario"]= $us;
+				$informacion_frases = lineaAleatoria("frases.txt");
+				$_SESSION["frase"]=$informacion_frases[0];
+				$_SESSION["autor"]=$informacion_frases[1];
 				$archivo_visitantes = "visitantes.txt";
 				$f = fopen($archivo_visitantes, "r"); 
 				if($f)

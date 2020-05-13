@@ -53,8 +53,8 @@ div > .frase, .autor{
 	text-align: right;
 }
 
-.contenedor-dia{
-	width: 70%;
+.contenedor-dia-semana{
+	width: 60%;
 }
 
 .btn_continuar{
