@@ -1,4 +1,11 @@
 <?php
+//Selecciona una línea aleatoria de un archivo de texto
+	function lineaAleatoria($nombreArchivo){
+		$temp = file($nombreArchivo);
+		shuffle($temp);
+		return explode("&",$temp[0]);
+	}
+
 	session_start();
 	if (isset($_SESSION["usuario"])):
 		$usuario=$_SESSION["usuario"];
@@ -20,10 +27,10 @@
 			<table class="bar_nav">
 				<tr>
 					<td>
-						<p>Fecha de hoy: <span id="fecha"><span></p>
+						<p>Fecha: <span id="fecha"><span></p>
 						<p><span id="hora"></span> hrs.</p>
 					</td>
-					<td id="contenedor-dia">
+					<td>
 						<!-- Imprime el número de visitantes -->
 						<p>Número de visitante:
 							<?=$n_visitante;?>
@@ -53,15 +60,11 @@
 			
 		<!-- Lee e imprime las frases -->
 			<?php
-			$archivo = "frases.txt";
-			$frases = file($archivo);
-			shuffle($frases);
-			//echo $frases[0];
-			$columnas = explode("&",$frases[0]);
+			$informacion_frases = lineaAleatoria("frases.txt");
 			?>
-			<q class='frase'><?=$columnas[0];?></q>
+			<q class='frase'><?=$informacion_frases[0];?></q>
 			<br>
-			<i class='autor'><?=$columnas[1];?></i>
+			<i class='autor'><?=$informacion_frases[1];?></i>
 
 		</div>
 		<div class="contenedor_tabla_img">
@@ -70,14 +73,11 @@
 					<td>
 						<!-- Lee e imprime los lugares -->
 						<?php
-							$archivo2 = "lugares.txt";
-							$lugares = file($archivo2);
-							shuffle($lugares);
-							$columnas = explode("&",$lugares[0]);
+							$informacion_lugares = lineaAleatoria("lugares.txt");
 						?>
 						<p>Uno de mi lugares favoritos es:<br>
-						<p><?=$columnas[1]?></p>
-						<img src='img/lugares/<?=$columnas[0];?>'><br>
+						<p><?=$informacion_lugares[1]?></p>
+						<img src='img/lugares/<?=$informacion_lugares[0];?>'><br>
 					</td>
 					<td class="btn_continuar">
 						<button onclick="window.location='menu_practicas.php'">Continuar</button>
@@ -85,14 +85,11 @@
 					<td>
 						<!-- Lee e imprime las mascotas -->
 						<?php
-							$archivo3 = "mascotas.txt";
-							$mascotas = file($archivo3);
-							shuffle($mascotas);
-							$columnas = explode("&",$mascotas[0]);
+							$informacion_mascotas = lineaAleatoria("mascotas.txt");
 						?>
 						<p>Unas de mi mascotas favoritas son:<br>
-						<p><?=$columnas[1]?></p>
-						<img src='img/mascotas/<?=$columnas[0]?>'><br>
+						<p><?=$informacion_mascotas[1]?></p>
+						<img src='img/mascotas/<?=$informacion_mascotas[0]?>'><br>
 					</td>
 				</tr>
 			</table>
