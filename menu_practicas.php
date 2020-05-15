@@ -25,9 +25,9 @@
 	</div>
 	<div class="contenedor_lista">
 		<h1>Menú de prácticas</h1>
-		<a href="sistema_solar.html">Sistema Solar</a>
-		<a href="volumenes.html">Volúmenes</a>
-		<a href="pitagoras.html">Teorema de pitágoras</a>
+		<a href="planetas.php">Sistema Solar</a>
+		<a href="volumenes.php">Volúmenes</a>
+		<a href="pitagoras.php">Teorema de pitágoras</a>
 		<a href="principal.php">Volver</a>
 	</div>
 </body>
