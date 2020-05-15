@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Volúmenes</title>
 	<script src="js/cargaHTML.js"></script>
-	<script src="js/volumenes.js"></script>
 	<link rel="stylesheet" href="css/practicas.css">
 </head>
 <body>
