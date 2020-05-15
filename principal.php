@@ -39,8 +39,8 @@ function diaDeLaSemana(){
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="global.js"></script>
-		<link rel="stylesheet" href="principal.css">
+		<script src="js/global.js"></script>
+		<link rel="stylesheet" href="css/principal.css">
 		<title>Mi Página Web</title>
 	</head>
 	<body>
@@ -97,7 +97,7 @@ function diaDeLaSemana(){
 					<td>
 						<!-- Lee e imprime los lugares -->
 						<?php
-							$informacion_lugares = lineaAleatoria("lugares.txt");
+							$informacion_lugares = lineaAleatoria("txt/lugares.txt");
 						?>
 						<p>Uno de mi lugares favoritos es:<br>
 						<p><?=$informacion_lugares[1]?></p>
@@ -109,7 +109,7 @@ function diaDeLaSemana(){
 					<td>
 						<!-- Lee e imprime las mascotas -->
 						<?php
-							$informacion_mascotas = lineaAleatoria("mascotas.txt");
+							$informacion_mascotas = lineaAleatoria("txt/mascotas.txt");
 						?>
 						<p>Unas de mi mascotas favoritas son:<br>
 						<p><?=$informacion_mascotas[1]?></p>

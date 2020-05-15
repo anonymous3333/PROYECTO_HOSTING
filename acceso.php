@@ -9,7 +9,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Acceso al sistema</title>
-	<link rel="stylesheet" href="acceso.css">
+	<link rel="stylesheet" href="css/acceso.css">
 </head>
 <body>
 
@@ -34,10 +34,10 @@
 			if (($us=="admin" and $contra=="abc") or ($us=="invitado" and $contra="12345")){
 			
 				$_SESSION["usuario"]= $us;
-				$informacion_frases = lineaAleatoria("frases.txt");
+				$informacion_frases = lineaAleatoria("txt/frases.txt");
 				$_SESSION["frase"]=$informacion_frases[0];
 				$_SESSION["autor"]=$informacion_frases[1];
-				$archivo_visitantes = "visitantes.txt";
+				$archivo_visitantes = "txt/visitantes.txt";
 				$f = fopen($archivo_visitantes, "r"); 
 				if($f)
 				{

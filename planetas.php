@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sistema Solar</title>
-	<script src="cargaHTML.js"></script>
-	<link rel="stylesheet" href="practicas-global.css">
-	<link rel="stylesheet" href="sistema-solar.css">
+	<script src="js/cargaHTML.js"></script>
+	<link rel="stylesheet" href="css/practicas.css">
+	<link rel="stylesheet" href="css/planetas.css">
 </head>
 <body>
 	<div class="contenido-principal">

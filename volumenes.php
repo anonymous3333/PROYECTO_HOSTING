@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Volúmenes</title>
-	<script src="cargaHTML.js"></script>
-	<script src="figuras.js"></script>
-	<link rel="stylesheet" href="practicas-global.css">
+	<script src="js/cargaHTML.js"></script>
+	<script src="js/volumenes.js"></script>
+	<link rel="stylesheet" href="css/practicas.css">
 </head>
 <body>
 	<div class="contenido-principal">

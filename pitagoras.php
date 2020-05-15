@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Teorema de Pitágoras</title>
-	<script src="cargaHTML.js"></script>
-	<link rel="stylesheet" href="practicas-global.css">
+	<script src="js/cargaHTML.js"></script>
+	<link rel="stylesheet" href="css/practicas.css">
 </head>
 <body>
 <div class="contenido-principal">
