@@ -1,8 +1,9 @@
 <?php
-	session_start();
-	if (isset($_SESSION["usuario"],$_SESSION["visitantes"])):
-		$usuario=$_SESSION["usuario"];
-		$visitante = $_SESSION["visitantes"];
+require ('funciones.php');
+session_start();
+if (isset($_SESSION["usuario"])):
+	$usuario=$_SESSION["usuario"];
+	$n_visitante = $_SESSION["visitantes"];
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -13,16 +14,11 @@
 	<link rel="stylesheet" href="css/menu_practicas.css">
 </head>
 <body>
-	<div class="info">
-		<p>Usuario actual:
-			<?=$usuario;?>
-		</p>
-		<p>
-			Número de visitante:
-			<?=$visitante;?>
-		</p>
-		<a href="cerrar_sesion.php">Cerrar sesión</a>
-	</div>
+<?php
+			//Trae la barra de navegación junto con sus estilos
+			//y la función para mostrar la fecha y hora
+			require('nav.php');
+		?>
 	<div class="contenedor_lista">
 		<h1>Menú de prácticas</h1>
 		<a href="planetas.php">Sistema Solar</a>
