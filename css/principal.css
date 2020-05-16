@@ -9,18 +9,6 @@ body{
 	background-color: #1c7ed6;
 }
 
-table{
-	width: 100%;
-}
-
-td{
-	text-align: center;
-}
-
-.bar_nav{
-	background-color: #fcc419;
-}
-
 .titulo{
 	margin: 3% 0 3%;
 	text-align: center;
@@ -53,9 +41,6 @@ div > .frase, .autor{
 	text-align: right;
 }
 
-.contenedor-dia-semana{
-	width: 60%;
-}
 
 .btn_continuar{
 	width: 20%;

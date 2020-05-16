@@ -1,0 +1,15 @@
+table{
+	width: 100%;
+}
+
+td{
+	text-align: center;
+}
+
+.bar_nav{
+	background-color: #fcc419;
+}
+
+.contenedor-dia-semana{
+	width: 60%;
+}

@@ -4,9 +4,13 @@
 	box-sizing: border-box;
 }
 
-html,body,.contenido-principal{
+html,body{
 	width: 100%;
 	height: 100%;
+}
+
+.contenido-principal{
+	height: 80%;
 }
 
 .lista-opciones{
