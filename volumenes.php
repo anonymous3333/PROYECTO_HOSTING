@@ -14,7 +14,7 @@ require ('funciones.php');
 	<script src="js/cargaHTML.js"></script>
 	<link rel="stylesheet" href="css/practicas.css">
 </head>
-<body>
+<body style="background-color: #4dabf7;">
 	<?php
 		require('nav.php');
 	?>

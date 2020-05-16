@@ -13,9 +13,8 @@ require ('funciones.php');
 	<title>Sistema Solar</title>
 	<script src="js/cargaHTML.js"></script>
 	<link rel="stylesheet" href="css/practicas.css">
-	<link rel="stylesheet" href="css/planetas.css">
 </head>
-<body>
+<body style="background-color: #b197fc;">
 <?php
 			//Trae la barra de navegación junto con sus estilos
 			//y la función para mostrar la fecha y hora
