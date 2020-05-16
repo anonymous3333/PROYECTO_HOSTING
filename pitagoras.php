@@ -1,5 +1,9 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
+	<?php if($_SESSION["usuario"]!="invitado"):?>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,4 +23,15 @@
 		</iframe>
 	</div>
 </body>
+	<?php else:?>
+	<head>
+		<meta charset="UTF-8"> 
+		<title>Acceso restringido</title>
+	</head>
+	<body>
+	<p>No puedes acceder a esta página.</p>
+	<a href="principal.php">Regresar a la página principal</a>
+	<a href="menu_practicas.php">Regresar al menú de prácticas</a>
+	</body>
+	<?php endif;?>
 </html>
