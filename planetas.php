@@ -31,7 +31,7 @@ require ('funciones.php');
 			<li><a href="#" onclick="cargaHTML('planetas/saturno.html');">Saturno</a></li>
 			<li><a href="#" onclick="cargaHTML('planetas/urano.html');">Urano</a></li>
 			<li><a href="#" onclick="cargaHTML('planetas/neptuno.html');">Neptuno</a></li>
-			<ul>
+			<ul class="regresar">
 			<li><a href="menu_practicas.php">Menú de prácticas</a></li>
 			<li><a href="principal.php">Página principal</a></li>
 			</ul>

@@ -25,7 +25,7 @@
 			<li><a href="#" onclick="cargaHTML('pitagoras/calcular-hipotenusa.html');">Calcular hipotenusa</a></li>
 			<li><a href="#" onclick="cargaHTML('pitagoras/calcular-cateto-opuesto.html');">Calcular cateto opuesto</a></li>
 			<li><a href="#" onclick="cargaHTML('pitagoras/calcular-cateto-adyacente.html');">Calcular cateto adyacente</a></li>
-			<ul>
+			<ul class="regresar">
 			<li><a href="menu_practicas.php">Menú de prácticas</a></li>
 			<li><a href="principal.php">Página principal</a></li>
 			</ul>

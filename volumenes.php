@@ -25,7 +25,7 @@ require ('funciones.php');
 			<li><a href="#" onclick="cargaHTML('volumenes/cilindro.html');">Cilindro</a></li>
 			<li><a href="#" onclick="cargaHTML('volumenes/cono.html');">Cono</a></li>
 			<li><a href="#" onclick="cargaHTML('volumenes/prisma_rectangular.html');">Prisma Rectangular</a></li>
-			<ul>
+			<ul class="regresar">
 			<li><a href="menu_practicas.php">Menú de prácticas</a></li>
 			<li><a href="principal.php">Página principal</a></li>
 			</ul>
