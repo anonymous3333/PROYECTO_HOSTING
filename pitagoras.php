@@ -16,10 +16,11 @@
 	<link rel="stylesheet" href="css/practicas.css">
 </head>
 <body style="background-color: #fff9db;">
-<?php
+	<?php
 		require('nav.php');
+		require('frase_dia.php');
 	?>
-<div class="contenido-principal">
+	<div class="contenido-principal">
 		<ol type="1" class="lista-opciones" id="lista_planetas">
 			<li><a href="#" onclick="cargaHTML('pitagoras/calcular-hipotenusa.html');">Calcular hipotenusa</a></li>
 			<li><a href="#" onclick="cargaHTML('pitagoras/calcular-cateto-opuesto.html');">Calcular cateto opuesto</a></li>

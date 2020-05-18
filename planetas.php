@@ -15,11 +15,12 @@ require ('funciones.php');
 	<link rel="stylesheet" href="css/practicas.css">
 </head>
 <body style="background-color: #b197fc;">
-<?php
-			//Trae la barra de navegación junto con sus estilos
-			//y la función para mostrar la fecha y hora
-			require('nav.php');
-		?>
+	<?php
+		//Trae la barra de navegación junto con sus estilos
+		//y la función para mostrar la fecha y hora
+		require('nav.php');
+		require('frase_dia.php');
+	?>
 	<div class="contenido-principal">
 		<ol type="1" class="lista-opciones" id="lista_planetas">
 			<li><a href="#" onclick="cargaHTML('planetas/mercurio.html');">Mercurio</a></li>

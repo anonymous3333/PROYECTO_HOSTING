@@ -14,11 +14,12 @@ if (isset($_SESSION["usuario"])):
 	<link rel="stylesheet" href="css/menu_practicas.css">
 </head>
 <body>
-<?php
-			//Trae la barra de navegación junto con sus estilos
-			//y la función para mostrar la fecha y hora
-			require('nav.php');
-		?>
+	<?php
+		//Trae la barra de navegación junto con sus estilos
+		//y la función para mostrar la fecha y hora
+		require('nav.php');
+		require('frase_dia.php');
+	?>
 	<div class="contenedor_lista">
 		<h1>Menú de prácticas</h1>
 		<a href="planetas.php">Sistema Solar</a>

@@ -17,6 +17,7 @@ require ('funciones.php');
 <body style="background-color: #4dabf7;">
 	<?php
 		require('nav.php');
+		require('frase_dia.php');
 	?>
 	<div class="contenido-principal">
 		<ol type="1" class="lista-opciones" id="lista_planetas">
