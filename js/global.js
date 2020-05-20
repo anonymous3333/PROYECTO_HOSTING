@@ -15,7 +15,6 @@ function obtenerHora() {
 
 function actualizarReloj() {
 	setInterval(obtenerHora, 1000);
-	console.log(window.location.hash);
 }
 
 function deshabilitarRetroceso(){
