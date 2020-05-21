@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+if(isset($_SESSION["usuario"])):
 
 // Destruye todas las variables de la sesion
 
@@ -61,3 +62,9 @@ session_destroy();
 	</div>
 </body>
 </html>
+<?php
+	else:
+		$prog='acceso.php';
+		header("Location: $prog");
+	endif;
+?>

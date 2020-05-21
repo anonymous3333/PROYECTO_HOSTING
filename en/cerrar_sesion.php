@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+if(isset($_SESSION["usuario"])):
 
 // Destruye todas las variables de la sesion
 
@@ -13,11 +14,11 @@ session_destroy();
 ?>
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>logout</title>
+	<title>Logout</title>
 	<script type="application/javascript">
 		window.onload = function(){
 			setTimeout(() => {
@@ -61,3 +62,9 @@ session_destroy();
 	</div>
 </body>
 </html>
+<?php
+	else:
+		$prog='acceso.php';
+		header("Location: $prog");
+	endif;
+?>
