@@ -34,9 +34,10 @@
 			if (($us=="admin" and $contra=="abc") or ($us=="invitado" and $contra="12345")){
 			
 				$_SESSION["usuario"]= $us;
-				$informacion_frases = lineaAleatoria("txt/frases.txt");
-				$_SESSION["frase"]=$informacion_frases[0];
-				$_SESSION["autor"]=$informacion_frases[1];
+				$informacion_frases = leerFrases();
+				$_SESSION["frase-ES"]=$informacion_frases["es"][0];
+				$_SESSION["frase-EN"]=$informacion_frases["en"][0];
+				$_SESSION["autor"]=$informacion_frases["es"][1];
 				$archivo_visitantes = "txt/visitantes.txt";
 				$f = fopen($archivo_visitantes, "r"); 
 				if($f)

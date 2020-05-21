@@ -6,6 +6,17 @@
 		return explode("&",$temp[0]);
 	}
 
+	function leerFrases(){
+		$linea = rand(0,30);
+		$archivo1 = file("txt/frases.txt");
+		$archivo2 = file("en/txt/frases.txt");
+		$frases = array(
+			"es" => explode("&",$archivo1[$linea]),
+			"en" => explode("&",$archivo2[$linea])
+		);
+		return $frases;
+	}
+
 	function diaDeLaSemana(){
 		$fecha = getdate();
 		switch($fecha["wday"]){

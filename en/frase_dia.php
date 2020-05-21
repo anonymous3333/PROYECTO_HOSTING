@@ -1,6 +1,6 @@
 <?php
-if(isset($_SESSION["frase"],$_SESSION["autor"])):
-	$frase = $_SESSION["frase"];
+if(isset($_SESSION["frase-EN"],$_SESSION["autor"])):
+	$frase = $_SESSION["frase-EN"];
 	$autor = $_SESSION["autor"];
 ?>
 <div>

@@ -30,8 +30,8 @@ require ('funciones.php');
 			
 		<!-- Lee e imprime las frases -->
 			<?php
-				if(isset($_SESSION["frase"],$_SESSION["autor"])):
-					$frase = $_SESSION["frase"];
+				if(isset($_SESSION["frase-ES"],$_SESSION["autor"])):
+					$frase = $_SESSION["frase-ES"];
 					$autor = $_SESSION["autor"];
 			?>
 			<q class='frase'><?=$frase;?></q>
