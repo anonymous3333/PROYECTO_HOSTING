@@ -39,7 +39,7 @@
 				$_SESSION["frase-ES"]=$informacion_frases["es"][0];
 				$_SESSION["frase-EN"]=$informacion_frases["en"][0];
 				$_SESSION["autor"]=$informacion_frases["es"][1];
-				$archivo_visitantes = "txt/visitantes.txt";
+				$archivo_visitantes = "../txt/visitantes.txt";
 				$f = fopen($archivo_visitantes, "r"); 
 				if($f)
 				{
