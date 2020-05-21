@@ -8,8 +8,8 @@
 
 	function leerFrases(){
 		$linea = rand(0,30);
-		$archivo1 = file("txt/frases.txt");
-		$archivo2 = file("en/txt/frases.txt");
+		$archivo1 = file("../txt/frases.txt");
+		$archivo2 = file("txt/frases.txt");
 		$frases = array(
 			"es" => explode("&",$archivo1[$linea]),
 			"en" => explode("&",$archivo2[$linea])
