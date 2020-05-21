@@ -10,6 +10,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Access</title>
+	<script src="../js/global.js"></script>
 	<link rel="stylesheet" href="../css/acceso.css">
 </head>
 <body>
@@ -56,9 +57,7 @@
 					fclose($f);
 				}
 		
-				$prog='mensaje_acceso.php';
-		
-				header("Location: $prog");
+				echo "<script>redireccionar('mensaje_acceso.php');</script>";
 			}else
 				echo "<div style='margin-top:2%'><p style='color:#e03131;text-align:center;'>No se reconoce el usuario o la contraseña.<br>Intente otra vez.</p></div>";
 		}
