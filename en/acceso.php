@@ -1,6 +1,7 @@
 <?php
 	require ('funciones.php');
 	session_start();
+	if(!isset($_SESSION["usuario"])):
 ?>
 
 <!DOCTYPE html>
@@ -64,3 +65,9 @@
 		?>
 </body>
 </html>
+<?php
+	else:
+		$prog='principal.php';
+		header("Location: $prog");
+	endif;
+?>
