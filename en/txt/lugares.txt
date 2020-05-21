@@ -1,0 +1,4 @@
+cine.jpg&The Cinema.
+mcdonalds.jpg&McDonald's
+mixup.jpg&Record store.
+natacion.jpg&Swimming Club.

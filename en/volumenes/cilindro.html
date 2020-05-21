@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<script src="volumenes.js"></script>
+<script>
+	window.onload = function(){
+		document.getElementById("calcular").onclick = obtenerVolumenCilindro;
+	}
+</script>
+<link rel="stylesheet" href="volumenes.css">
+<div><h1>Cylinder Volume</h1></div>
+<img src="img/cilindro.png" alt="cilindro">
+	<div class="titulo">
+		<label for="radio">Radius</label>
+		<input type="text" name="radio" id="radio" class="textbox">
+	</div>
+	<div>
+		<label for="altura">Height</label>
+		<input type="text" name="altura" id="altura" class="textbox">
+	</div>
+	<div><button class="button" id="calcular">Calculate</button></div>
+	<div>
+		<label for="resultado">Result</label>
+		<input type="text" readonly name="resultado" class="textbox" id="resultado">
+	</div>

@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<script src="volumenes.js"></script>
+<script>
+	window.onload = function(){
+		document.getElementById("calcular").onclick = obtenerVolumenPrismaR;
+	}
+</script>
+<link rel="stylesheet" href="volumenes.css">
+<div><h1>Rectangular Prism Volume</h1></div>
+<img src="img/prisma_rectangular.png" alt="cilindro">
+	<div class="titulo">
+		<label for="arista1">Edge 1</label>
+		<input type="text" name="arista1" id="arista1" class="textbox">
+	</div>
+	<div>
+		<label for="arista2">Edge 2</label>
+		<input type="text" name="arista2" id="arista2" class="textbox">
+	</div>
+	<div>
+		<label for="arista3">Edge 3</label>
+		<input type="text" name="arista3" id="arista3" class="textbox">
+	</div>
+	<div><button class="button" id="calcular">Calculate</button></div>
+	<div>
+		<label for="resultado">Result</label>
+		<input type="text" readonly name="resultado" class="textbox" id="resultado">
+	</div>
