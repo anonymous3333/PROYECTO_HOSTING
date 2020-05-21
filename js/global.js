@@ -29,3 +29,21 @@ window.onload = function(){
 	deshabilitarRetroceso();
 }
 
+function obtenerPaginaActual(){
+    var rutaAbsoluta = self.location.href;   
+    var posicionUltimaBarra = rutaAbsoluta.lastIndexOf("/");
+    var rutaRelativa = rutaAbsoluta.substring( posicionUltimaBarra + "/".length , rutaAbsoluta.length );
+    return rutaRelativa;  
+}
+
+function redireccionar(url){
+	location.href = url;
+}
+
+function traducirEN(){
+	redireccionar("en/"+obtenerPaginaActual());
+}
+
+function traducirES(){
+	redireccionar("../"+obtenerPaginaActual());
+}

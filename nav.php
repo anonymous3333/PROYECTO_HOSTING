@@ -18,7 +18,7 @@
 			</td>
 			<td>
 				<p>Cambiar idioma:</p>
-				<img src="img/lang/eng.gif" alt="Inglés" height="25px">
+				<img src="img/lang/eng.gif" alt="Inglés" height="25px" onclick="traducirEN();">
 				<img src="img/lang/es.gif" alt="Español" height="25px">
 			</td>
 			<td>

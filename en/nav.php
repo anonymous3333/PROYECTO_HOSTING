@@ -19,7 +19,7 @@
 			<td>
 				<p>Change language:</p>
 				<img src="../img/lang/eng.gif" alt="Inglés" height="25px">
-				<img src="../img/lang/es.gif" alt="Español" height="25px">
+				<img src="../img/lang/es.gif" alt="Español" height="25px" onclick="traducirES();">
 			</td>
 			<td>
 				<p>Current user:</p>
