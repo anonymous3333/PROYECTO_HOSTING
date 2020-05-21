@@ -43,8 +43,8 @@
 	</head>
 	<body>
 	<p>You have no permission to see this page.</p>
-	<a href="principal.php">Start</a>
-	<a href="menu_practicas.php">Back</a>
+	<a href="principal.php">Back</a>
+	<a href="menu_practicas.php">Start</a>
 	</body>
 	<?php endif;?>
 </html>
