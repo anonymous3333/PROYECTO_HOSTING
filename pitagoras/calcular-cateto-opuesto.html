@@ -12,7 +12,7 @@
 					alert("Datos de entrada no válidos.")
 				}else{
 					resultado=Math.sqrt(hipotenusa*hipotenusa-cateto_adyacente*cateto_adyacente);
-					document.getElementById("resultado").value = isNaN(resultado) ? "Indefinido":resultado;
+					document.getElementById("resultado").value = isNaN(resultado) ? "Indefinido":resultado.toFixed(2);
 				}
 			}
 		}
