@@ -1,10 +1,9 @@
 function obtenerVolumenCubo(){
-	var arista1 = parseFloat(document.getElementById("arista1").value);
-	var arista2 = parseFloat(document.getElementById("arista2").value);
-	if(isNaN(arista1) || isNaN(arista2))
+	var arista = parseFloat(document.getElementById("arista").value);
+	if(isNaN(arista))
 		alert("Datos de entrada no válidos.");
 	else{
-		document.getElementById("resultado").value = (arista1*arista2);
+		document.getElementById("resultado").value = (arista*arista).toFixed(2);
 	}
 }
 
@@ -14,7 +13,7 @@ function obtenerVolumenCilindro(){
 	if(isNaN(radio) || isNaN(altura))
 		alert("Datos de entrada no válidos.");
 	else{
-		document.getElementById("resultado").value = (Math.PI*radio*radio)*altura;
+		document.getElementById("resultado").value = ((Math.PI*radio*radio)*altura).toFixed(2);
 	}
 }
 
@@ -24,7 +23,7 @@ function obtenerVolumenCono(){
 	if(isNaN(radio) || isNaN(altura))
 		alert("Datos de entrada no válidos.");
 	else{
-		document.getElementById("resultado").value = (1/3)*(Math.PI*radio*radio)*altura;
+		document.getElementById("resultado").value = ((1/3)*(Math.PI*radio*radio)*altura).toFixed(2);
 	}
 }
 
@@ -35,6 +34,6 @@ function obtenerVolumenPrismaR(){
 	if(isNaN(arista1) || isNaN(arista2) || isNaN(arista3))
 		alert("Datos de entrada no válidos.");
 	else{
-		document.getElementById("resultado").value = (arista1*arista2*arista3);
+		document.getElementById("resultado").value = (arista1*arista2*arista3).toFixed(2);
 	}
 }
